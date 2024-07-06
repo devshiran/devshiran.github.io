@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airsoft</title>
+    <style>
+          .highlight {
+            background: linear-gradient(to top, #ffff00 44%, #b1707000 0%);
+          }
+        .nav-section {
+            display: flex;
+            padding: 0 5%;
+            align-items: center;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 23px;
+            align-items: center;
+        }
+        .all {
+            background-image: url(call-of-duty-mobile-4k-u2.jpg);
+            color: rgb(0, 0, 0);
+            background-size: cover;
+            height: 100vh;
+            margin-bottom: 30px;
+        }
+        span.hero-skills-items img {
+             width: 36px;
+        }
+        .hero-setion {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            padding-top: 50px;
+        }
+        .hero-discription {
+             padding-top: 190px;
+        }
+        .hero-card-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+            gap: 30px;
+        }
+        .hero-card-item1{
+            background-image: url("wallpaperflare.com_wallpaper (2).jpg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .hero-card-item2{
+            background-image: url("wallpaperflare.com_wallpaper (5).jpg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .hero-card-item3{
+            background-image: url(wp8656805.jpg);
+            color: white;
+        }
+        .hero-card-container div {
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+            background-position: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .welcome-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .welcome-btn {
+            background: yellow;
+            border-radius: 10px;
+            height: 30px;
+            width: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .what-is-airsoft-tikmark img {
+            width: 36px;
+        }
+        .what-is-airsoft-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(130, 111, 77);
+        }
+        .what-is-airsoft-tikmark {
+            display: flex;
+            flex-direction: column;
+        }
+        .pricing-tikmark-items img {
+            width: 20px;
+        }
+        .pricing-card-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            padding-top: 30px;
+        }
+        .pricing-tikmark-items {
+            display: flex;
+            flex-direction: column;
+        }
+        .pricing-card-item1 {
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 37px;
+        }
+        .pricing-card-item2 {
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pricing-card-item3 {
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pricing-event {
+            background-color: gray;
+            padding: 0 43px;
+        }
+        .pricing-section {
+           
+            padding-top: 30px;
+            padding-bottom: 45px;
+        }
+        span.pricing-time {
+            font-size: 50px;
+        }
+        .pricing-btn-fill {
+            border: 1px solid;
+            background-color: yellow;
+        }
+        .indoor-arena img {
+            width: 50px;
+        }
+        .outdoor-field img {
+            width: 50px;
+        }
+
+        .arena-field-section {
+            display: flex;
+            justify-content: space-around;
+        }
+        .indoor-arena {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .outdoor-field {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .indoor-arena-img {
+            display: flex;
+            gap: 30px;
+        }
+        .outdoor-field-img {
+            display: flex;
+            gap: 30px;
+        }
+        .arena-field-section{
+            background-image: url(Ic6AMu4.jpg);
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        .indoor-arena-btn {
+            border: 1px solid;
+            background: yellow;
+            padding: 10px;
+        }
+        .outdoor-field-btn{
+            border: 1px solid;
+            background: yellow;
+            padding: 10px;
+        }
+        .tactical-gear-tikmark img {
+            width: 36px;
+        }
+        .tactical-gear-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(130, 111, 77);
+        }
+        .tactical-gear-tikmark {
+            display: flex;
+            flex-direction: column;
+        }
+        .tactical-gear-img img {
+            width: 400px;
+        }
+        .people-say-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .people-say-name {
+            padding-top: 25px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="nav-section">
+            <div class="nav-logo">
+                <span>R.S.AIRSOFT</span>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-menu-item">PlAY</div>
+                <div class="nav-menu-item">ABOUT</div>
+                <div class="nav-menu-item">RLEES & WAVERS</div>
+                <div class="nav-menu-item">SHOP</div>
+                <div class="nav-menu-item">MEDIA</div>
+                <div class="nav-menu-item">CONTACT</div>
+                <span class="highlight">BOOK EVENT</span> [DESIGNER AND DEVELOPER]
+            </div>
+            
+        </div>
+        <div class="hero-setion">
+            <div class="hero-discription">
+                <h1>
+                    RAIDER 
+                </h1>
+                <h1> SPIRIT AIRSOFT</h1>
+                <p>
+                    Raider spirit Airsoft is the premiar Airsoft Arena
+                    and pro shop, featuring the largest 
+                </p>
+                <p>
+                    elimate controlled
+                    indoor airport facility in the south.
+                </p>
+                
+                <div class="hero-skills">
+                    <span class="hero-skills-items"><img src="arrow_right-1024.webp" alt=" ">Visit Our Arena</span>
+                    <span class="hero-skills-items"><img src="arrow_right-1024.webp" alt="">ABOUT R & A</span>
+                    
+                </div>
+             </div>
+        </div>
+    </div>
+    <div class="hero-card-section">
+        <div class="hero-card-container">
+            <div class="hero-card-item1">
+                <h2>[PLAY]</h2>
+            </div> 
+            <div class="hero-card-item2">
+                <h2>[STORE]</h2>
+            </div>
+            <div class="hero-card-item3">
+                <h2>[ARENA]</h2>
+                <p>Our newest location, Raider spirit Airsoft spring, opened in the fall of 2015.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="welcome-section">
+        <h3>WELCOME</h3>
+        <h2><b>THE BEST AIRSOFT ARENA ON</b></h2>
+        <h2><b>THE PLANET!</b></h2>
+        <p>From conseption the R.S.Airsoft first was quit to after the most realistic combat 
+            simulation faculty in the Airsoft industry . What happen 
+        </p>
+        <p>
+            when you combined talent of
+            the hollywood the designer with the vition of Airsoft players? stop in to 
+        </p>
+        <p>
+            the war 
+            at R.S..Airsoft and try out the best airsoft action you have ever experienced.
+        </p>
+        <div class="welcome-btn">
+            <span class="btn-fill">ABOUT.</span>
+        </div>
+    </div>
+    <div class="what-is-airsoft-section">
+        <div class="what-is-airsoft-img">
+            <img src="177b513df6a05d319b3293e9bd07fc06.jpg" alt="">
+        </div>
+        <div class="what-is-airsoft-dis">
+            <p>What is AIRSOFT</p>
+            <h2>AIRSOFT IS AN ACTIVE SPPORT</h2>
+            <h2>AND NOT FOR THE FAINT</h2>
+            <h2>OF HEART!</h2>
+
+            <p>Airsoft replicast often resemble real firearms but shoot small plastic timing</p>
+            <p>BBs. Similar in nature to paintball and first person shooting video game,</p>
+            <p>winsoft allows for realistic battle and tacticle scenario game play.</p>
+
+            <div class="what-is-airsoft-tikmark">
+                <span class="what-is-airsoft-tikmark-items"><img src="arrow_right-1024.webp" alt=" ">CHECK OUT OUR  
+                    <span class="highlight">HOURS OF OPERATION</span>BEFORE YOU ARRIVE</span>
+                <span class="what-is-airsoft-tikmark-items"><img src="arrow_right-1024.webp" alt="">VIEW OUR
+                    <span class="highlight">UPCOMING EVENTS HERE</span></span>
+                
+            </div>
+        </div>
+       
+    </div>
+    <div class="pricing-section">
+        <div class="pricing-dis">
+            <p>PLAY</p>
+            <h2><b>HOURS & PRICING</b></h2>
+        </div>
+        <div class="pricing-btn-wrapper">
+            <span class="pricing-btn-fill">OPEN PLAY</span>
+            <span class="pricing-btn-fill">EVENTS</span>
+            <span class="pricing-btn-fill">TRINERS</span>
+        </div>
+        <div class="pricing-card-container">
+            <div class="pricing-card-item1">
+                <h3>OPEN PLAY-ALL DAY</h3>
+                <p><b><span class="pricing-time">25</span>/ALL DAY</b></p>
+                <div class="pricing-tikmark-items">
+                    <img src="arrow_right-1024.webp" alt="">All day of open play.
+                    <img src="arrow_right-1024.webp" alt="">Bring your own equipment.
+                </div>
+                <div class="pricing-event"><p>> BOOK EVENT</p></div>
+            </div>     
+            <div class="pricing-card-item2">
+                <h3>3 HOUR RENTAL</h3>
+                <p><b><span class="pricing-time">50</span>/3 HOURS</b></p>
+                <div class="pricing-tikmark-items">
+                    <img src="arrow_right-1024.webp" alt="">3 Hours of Play.
+                    <img src="arrow_right-1024.webp" alt="">Intlunt Rental Gun,Hapaline
+                    ,Safty Mark,Safty Vest, and 1000 BBs.
+                </div>
+                <div class="pricing-event"><p>> BOOK EVENT</p></div>
+            </div>     
+            <div class="pricing-card-item3">
+                <h3>ALL DAY RENTAL</h3>
+                <p><b><span class="pricing-time">75</span>/ALL DAY</b></p>
+                <div class="pricing-tikmark-items">
+                    <div class="pricing-tik-item">
+                        <img src="arrow_right-1024.webp" alt="">All day Rental.
+                    </div>
+                    <div class="pricing-tik-item">
+                        <img src="arrow_right-1024.webp" alt="">All day Rental.
+                    </div>
+                    
+                </div>
+                <div class="pricing-event"><p>> BOOK EVENT</p></div>
+            </div>            
+        </div>
+    </div>
+        <div class="arena-field-section">
+                <div class="indoor-arena">
+                    <div class="indoor-arena-head">
+                        <h2>[INDOOR ARENA]</h2>
+                    </div>
+                    <div class="indoor-arena-dis">
+                        <p>Our ever location, R.S.Airsoft spring. Opend in the fall of</p>
+                        <p>2015 and catapulled the Housten.</p>
+                    </div>
+                   <div class="indoor-arena-img">
+                    <div class="indoor-arena-img1">
+                        <img src="bulletproof-vest-icon-outline-style-vector-removebg-preview.png" alt="">
+                        <p>Pro Shop</p>
+                    </div>
+                    <div class="indoor-arena-img2">
+                        <img src="pointer_cross_aim-512.webp" alt="">
+                        <p>Arena/Events</p>
+                    </div>
+                    <div class="indoor-arena-img3">
+                        <img src="pngtree-jetpack-vector-icon-design-illustration-png-image_9026450-removebg-preview.png" alt="">
+                        <p>DMZ</p>
+                    </div>
+                   </div>
+                    <div class="indoor-arena-btn">
+                        <span class="indoor-btn-fill">>INFO INDOOR</span>
+                    </div>
+                </div>
+                <div class="outdoor-field">
+                    <div class="outdoor-field-head">
+                        <h2>[OUTDOOR FIELD]</h2>
+                    </div>
+                    <div class="outdoor-field-dis">
+                        <p>Largest Tacticle Houston's only dedicated,</p>
+                        <p>outdoor Airsoft Field.</p>
+                        
+                    </div>
+                    <div class="outdoor-field-img">
+                        <div class="outdoor-field-img1">
+                            <img src="pointer_cross_aim-512.webp" alt="">
+                            <p>Simulation</p>
+                        </div>
+                        <div class="outdoor-field-img2">
+                            <img src="medal-icon-vector-removebg-preview.png" alt="">
+                            <p>Arena/Events</p>
+                        </div>
+                        <div class="outdoor-field-img3">
+                            <img src="th-removebg-preview.png" alt="">
+                            <p>DMZ</p>
+                        </div>
+                    </div>
+                    <div class="outdoor-field-btn">
+                        <span class="outdoor-btn-fill">>INFO OUTDOOR</span>
+                    </div>
+                </div>
+        </div>
+        <div class="tactical-gear-section">
+            <div class="tactical-gear-img">
+                <img src="wallpapersden.com_76524-2048x1152.jpg" alt="">
+            </div>
+            <div class="tactical-gear-dis">
+                
+                <h2><b>TACTICAL GEAR</b></h2>
+    
+               <p>Tactical Gear from manufactures like candor,
+                Valkrn,NCstar,VISM,illcambur,Happel,Troy,IAN,
+               </p>
+               <p> and many other makers. Full selection of
+                tactical vests, plates carriers, pouches, 
+                backpacks,belseekers,stings, etc.</p>
+                <div class="tactical-gear-tikmark">
+                    <span class="tactical-gear-tikmark-items"><img src="arrow_right-1024.webp" alt=" ">VIEW MORE
+                        
+                   
+                </div>
+            </div>
+           
+        </div>
+        <div class="people-say-section">
+            <h3>TESTIMOKILLS</h3>
+            <h2><b>WHAT PEOPLE SAY</b></h2>
+            <p>Acording to liqua,poition ou,compressed vite,entired.Anit aqualiciam terem agency 
+                dispatch in a, vivera quit fergsion a teliq,
+            </p>
+            <p>
+                when you combined talent of
+                the hollywood the designer with the vition of Airsoft players? stop in to 
+            </p>
+            <p>
+                the war 
+                at R.S..Airsoft and try out the best airsoft action you have ever experienced.
+            </p>
+            <div class="people-say-name">
+                <h3><b>NICHOLAS SMALL</b></h3>
+            </div>
+            <div class="people-say-img">
+
+            </div>
+        </div>
+
+</body>
+</html>
